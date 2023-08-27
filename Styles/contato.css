@@ -1,0 +1,126 @@
+html {
+    --color-black-900: rgb(0, 0, 0);
+    --color-black-700: rgb(40, 40, 40);
+    --color-white-50: rgb(255, 255, 255);
+    --color-yellow-600: rgb(184, 120, 0);
+    --color-yellow-500: rgb(204, 147, 40);
+    --color-blue-700: rgb(11, 0, 74);
+}
+
+div {
+
+    color: var(--color-white-50);
+}
+
+body {
+    background-color: var( --color-yellow-600);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 30rem;
+	height: 30rem;
+    background-color: var(--color-black-700);
+    text-align: center;
+
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+h2 {
+    margin-left: 2rem ;
+}
+
+h4 {
+    margin-left: 1rem;
+}
+
+
+.buttons {
+    height: 2rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: var(--color-white-50);
+    padding: 1px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    margin-left: 14rem;
+    font-size: 1rem;
+}
+
+.buttons:hover {
+    color: var(--color-yellow-600);
+}
+
+.exit {
+    background-color: transparent;
+    border: transparent;
+    color: var(--color-black-900);
+}
+
+.exit:hover {
+    transform: scale(1.5);
+}
+
+#PerfilFabio {
+    height: 20rem;
+}
+
+#PerfilVictor {
+    height: 20rem;
+}
+
+#PerfilMatheus {
+    height: 20rem;
+}
+
+#infoV {
+    position: fixed;
+    top: 20%;
+    left: 14%;
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 100;
+}
+
+#infoV img {
+    height: 20rem;
+    margin-left: 1.5rem;
+}
+
+#infoM img {
+    height: 20rem;
+    margin-left: 1.5rem;
+}
+
+#infoF img {
+    height: 20rem;
+    margin-left: 1.5rem;
+}
+
+#backdrop {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
